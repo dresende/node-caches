@@ -1,6 +1,6 @@
 // every module calling caches with this id ("my-cache") will
 // get the same store and will have access to the same items
-var mycache = require("../lib/caches")("my-cache");
+var mycache = require("../lib/caches")("my-cache", "memcache");
 
 // you can use a Date object instead of a Number
 // to define expiration time

@@ -1,6 +1,6 @@
 {
 	"name"        : "caches",
-	"version"     : "0.0.1",
+	"version"     : "0.0.1-2",
 	"description" : "NodeJS Cache Abstraction",
 	"keywords"    : [ "cache" ],
 	"author"      : "Diogo Resende <dresende@thinkdigital.pt>",
@@ -20,6 +20,9 @@
 		"type"   : "MIT",
 		"url"    : "http://github.com/dresende/node-caches/raw/master/LICENSE"
 	}],
+	"dependencies": {
+		"memcached": ">= 0.0.7"
+	},
 	"devDependencies": {
 		"vows": "0.6.x"
 	},
