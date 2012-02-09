@@ -16,13 +16,13 @@ vows.describe("memory store").addBatch({
 				assert.equal(data, cache_data);
 			});
 		},
-		"and after 3 secs": {
+		"and after 4 secs": {
 			topic: function () {
 				var cb = this.callback;
 
 				setTimeout(function () {
 					store.get(cache_key, cb);
-				}, 3000);
+				}, 4000);
 			},
 			"should be gone": function (err, _) {
 				assert.instanceOf(err, Error);
@@ -52,13 +52,13 @@ vows.describe("memory store").addBatch({
 					assert.isNull(err);
 					assert.equal(data, cache_data);
 				},
-				"after 2 more secs": {
+				"after 3 more secs": {
 					topic: function () {
 						var cb = this.callback;
 
 						setTimeout(function () {
 							store.get(cache_key, cb);
-						}, 2000);
+						}, 3000);
 					},
 					"should be gone": function (err, _) {
 						assert.instanceOf(err, Error);
