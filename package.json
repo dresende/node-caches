@@ -1,6 +1,6 @@
 {
 	"name"        : "caches",
-	"version"     : "0.0.1-3",
+	"version"     : "0.0.1-4",
 	"description" : "NodeJS Cache Abstraction",
 	"keywords"    : [ "cache" ],
 	"author"      : "Diogo Resende <dresende@thinkdigital.pt>",
